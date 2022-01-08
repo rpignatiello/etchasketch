@@ -1,22 +1,30 @@
+:root {
+  --boxsize: 10vmin;
+}
+
 body {
   background-color: grey;
 }
 
 .box {
-  height: 40px;
-  width: 40px;
+  display: flex;
+  align-items: stretch;
   background-color: white;
   border-style: solid;
   border-width: thin;
   border-color: black;
+  width: var(--boxsize);
+  height: var(--boxsize);
 }
 
 .large-container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  align-items:center;
-  justify-content: center;
+  align-items: center;
+  justify-content:center;
+  align-self: center;
 }
 
 .row {
@@ -27,4 +35,10 @@ body {
   height: 50px;
   width: 50px;
   background-color: blue;
+}
+
+.biggerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
